@@ -16,9 +16,9 @@ class Create extends Component {
                 <h3>Crear nueva nota</h3>
                 <form onSubmit={this.createNote.bind(this)}>
                     <label>Titulo</label>
-                    <input type="text" onChange={this.updateTitle.bind(this)} placeholder="Ingresa un titulo"/>
+                    <input id="title" type="text" onChange={this.updateTitle.bind(this)} placeholder="Ingresa un titulo"/>
                     <label>Descripcion</label>
-                    <textarea onChange={this.updateDescription.bind(this)}></textarea>
+                    <textarea id="description" onChange={this.updateDescription.bind(this)}></textarea>
                     <button type="submit">Create</button>
                 </form>
             </div>
